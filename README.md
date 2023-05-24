@@ -1,7 +1,7 @@
 
-# **Team Name - Flavorgram**
+# **Team Name - Eatogram**
 
-## **Project Group - 135**
+## **Project Group - 51**
 
 ---
 
