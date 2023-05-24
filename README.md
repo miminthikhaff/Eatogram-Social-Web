@@ -7,7 +7,7 @@
 
 - ### **Group Leader** - IT21058028- Inthikhaff M. I. M (IT21058028)
 
-- ### **Member 2** - IT21004490 - Bishirhafi F.S.M.T (IT21004490)
+- ### **Member 2** - IT21004490 - Aadhil S. M (IT21004490)
 
 - ### **Member 3** - IT21041198 - Sajaji M. S. M (IT21041198)
 
