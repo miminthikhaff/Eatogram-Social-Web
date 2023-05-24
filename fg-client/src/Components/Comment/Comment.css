@@ -1,0 +1,412 @@
+button.primary {
+  height: 2rem;
+  padding: 0 1rem;
+  border-radius: 1rem;
+  border: none;
+  color: var(--light);
+  background: var(--blue);
+}
+
+button.danger {
+  height: 2rem;
+  padding: 0 1rem;
+  border-radius: 1rem;
+  border: none;
+  color: var(--light);
+  background: var(--red);
+}
+
+.background_container {
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.279);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  backdrop-filter: blur(1em);
+}
+
+.comment_container {
+  background: var(--light);
+  padding: 2rem 1rem;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  height: 85vh;
+  width: 35rem;
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0px 8px 30px 4px rgba(0, 0, 0, 0.1);
+  font-size: 0.85em;
+}
+
+.comment_container__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 3;
+  border: none;
+  background: var(--gray_0);
+  color: var(--dark);
+  padding: 0.45rem;
+  height: 1.8rem;
+  width: 1.8rem;
+  border-radius: 2rem;
+  font-size: 1.1em;
+}
+
+.comment_container__close:hover {
+  background-color: var(--gray_1);
+}
+
+.comment_container__search {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  border-bottom: 2px solid var(--gray_1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--light);
+  margin: 0;
+  padding: 1rem 2rem 1rem 2rem;
+  z-index: 2;
+}
+
+.comment_container__search > div {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+
+.comment_container__search > div > div {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+
+.comment_container__search > div > div > input,
+.comment_container__search > div > div > select {
+  height: 2rem;
+  width: 100%;
+  padding: 0rem 1rem;
+  border-radius: 5rem;
+  background-color: var(--gray_0);
+}
+
+.comment_container__search > div > input {
+  background-color: var(--gray_0);
+  border: 2px solid var(--gray_2);
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 5rem;
+  padding: 1rem;
+}
+
+button.no_button_icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.comment_container__search > div > button.no_button_icon {
+  padding: 0.5rem 0.75rem;
+  border-radius: 5rem;
+  background: var(--gray_0);
+  display: flex;
+  gap: 0.5rem;
+}
+
+.comment_container__search__header {
+  margin: 0 auto;
+  padding: 0;
+}
+.comment_container__search__header > h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+ul.comment_container__comments,
+.comment__replies {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.8rem;
+  list-style: none;
+  overflow: auto;
+  margin-bottom: 4.5rem;
+  padding: 1rem 0;
+  margin-top: 8rem;
+}
+
+.comment__replies {
+  margin-top: 0rem;
+  margin-bottom: 0;
+  margin-left: 6rem;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+ul.comment_container__comments > li > div.own_comment > div {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0.8rem;
+  justify-content: right;
+}
+
+.comment_container__comments_user_comment > div > div {
+  display: flex;
+  gap: 0.5rem;
+  position: relative;
+}
+.comment_container__comments_user_comment .user_comment_comment,
+.comment__replies > li {
+  width: 100%;
+  max-width: 85%;
+  width: max-content;
+  overflow: hidden;
+  resize: none;
+  padding: 0.7rem 1rem;
+  background-color: var(--gray_0);
+  text-align: left;
+  border-radius: 1rem;
+  border-bottom-left-radius: 0;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.comment__replies > li {
+  max-width: 95%;
+  text-align: left;
+}
+
+.comment_container__comments_user_comment
+  .user_comment_comment
+  .user_comment_username {
+  font-weight: 600;
+}
+.comment_container__comments_user_comment
+  .user_comment_comment.own_comment
+  .user_comment_username,
+.comment__reply.user_comment_username {
+  font-weight: 600;
+  text-align: right;
+  margin-right: auto;
+}
+
+.comment_container__comments_user_comment .user_comment_comment.own_comment {
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 0rem;
+  background: var(--light_blue);
+}
+
+.user_comment_reactions {
+  font-size: 1.5em;
+  padding-top: 0.5rem;
+}
+
+.comment_container__comments_user_comment > div {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.4rem;
+}
+
+.comment_container__comments_user_comment > div > div > button.like {
+  min-width: 1.8rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  border: none;
+  background: var(--gray_0);
+  color: var(--dark);
+  border-radius: 1rem;
+  font-size: 1.1em;
+  margin-top: 0.5rem;
+  padding: 0.48rem;
+}
+
+.comment_container__comments_user_comment > div > div > button.like.active {
+  background: var(--light_red);
+}
+
+.user_comment__actions {
+  gap: 0.5rem;
+  padding-left: 3rem;
+  display: flex;
+  /* flex-flow: row wrap;
+  gap: 1rem; */
+  /* max-width: 80%; */
+}
+.own_comment > .user_comment__actions {
+  gap: 0.5rem;
+  padding-right: 3rem;
+}
+
+.user_comment__actions > button {
+  color: var(--gray_2);
+  font-size: 0.95em;
+  font-weight: 600;
+  padding: 0;
+  min-width: max-content;
+}
+.user_comment__actions > button.no_button_icon {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0.2rem;
+  align-items: center;
+}
+
+button.user_comment__actions__delete {
+  color: var(--red);
+}
+
+button.user_comment__actions__edit {
+  color: var(--blue);
+}
+
+.comment_container__create_comment {
+  position: absolute;
+  bottom: 0rem;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 1rem;
+  border-top: 2px solid var(--gray_1);
+}
+
+.comment_container__create_comment__warning {
+  position: absolute;
+  top: -1.7rem;
+  right: 1rem;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
+
+  color: var(--dark_blue);
+  padding: 0.5rem 1rem;
+  background: var(--light_blue);
+  border-radius: 0.7rem;
+}
+.comment_container__create_comment.comment_container__edit_comment {
+  position: relative;
+  padding: 0;
+  border-top: none;
+}
+
+.comment_container__create_comment.comment_container__edit_comment > select {
+  left: 0;
+  top: 0;
+}
+.comment_container__create_comment.comment_container__edit_comment > div {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.comment_container__create_comment > textarea {
+  padding: 1rem 5rem 1rem 1rem;
+  resize: none;
+  border-radius: 1rem;
+  border: none;
+  background: var(--gray_0);
+  margin: 0 1rem 0 4rem;
+  width: calc(100% - 4rem);
+  height: max-content;
+  overflow: auto;
+}
+
+.comment_container__create_comment > .replying__actions {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  position: absolute;
+  right: 2rem;
+  top: 1.8rem;
+  height: 2.5rem;
+  width: 7rem;
+  border: none;
+  font-size: 1.1em;
+}
+
+.comment_container__create_comment textarea.replying {
+  width: calc(100%);
+  margin-left: 0;
+}
+
+.comment_container__create_comment.comment_container__edit_comment > textarea {
+  padding-right: 1rem;
+}
+.comment_container__create_comment > select {
+  position: absolute;
+  height: 2.5rem;
+  left: 1rem;
+  border-radius: 1rem;
+  top: 1rem;
+  font-size: 1.2em;
+}
+
+.comment_container__create_comment > button,
+.comment_container__create_comment > .replying__actions > button {
+  position: absolute;
+  right: 2rem;
+  top: 1.8rem;
+  height: 2.5rem;
+  width: 3rem;
+  border-radius: 1rem;
+  background: var(--blue);
+  border: none;
+  font-size: 1.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comment_container__create_comment > .replying__actions > button {
+  position: unset;
+  width: 3rem;
+}
+
+.comment_container__search__reactions {
+  width: fit-content;
+}
+
+input[type="checkbox"].comment_container__search__liked {
+  height: unset;
+  padding: unset;
+  width: max-content;
+}
+label.comment_container__search__liked {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+label.comment_container__search__liked > span {
+  width: max-content;
+}
+
+.comment_container__comments_loader {
+  position: absolute;
+  top: 1.5rem;
+  left: 1rem;
+  z-index: 100;
+}

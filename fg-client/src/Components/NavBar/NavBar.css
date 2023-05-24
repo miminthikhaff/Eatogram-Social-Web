@@ -1,0 +1,25 @@
+.navbar_barContent {
+    height: 54px;
+    background-color: white;
+    box-shadow: 1px 1px 15px rgba(6, 6, 6, 0.382);
+    border-bottom: 1px solid #ddbbdd;
+}
+
+.navbar_logo {
+    margin-top: -80px;
+}
+
+.navbar_img {
+    margin: 15px 10px;
+}
+
+.navbar_seacrhBar {
+    margin-left: -310px;
+    height: 30px;
+    width: 550px;
+    margin-top: 15px;
+    border: 1px solid #dbdbdb;
+    text-align: center;
+    background-color: #fafafa;
+    border-radius: 5px;
+}

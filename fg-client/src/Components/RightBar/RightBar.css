@@ -1,0 +1,72 @@
+.rightBar{
+    flex:3.5;
+}
+
+.rightBarWrapper{
+    padding: 20px 20px 0 0 ;
+}
+
+.rightBarTitle{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.rightBarInfo{
+    margin-bottom: 30px;
+}
+
+.rightBarInfoItem{
+    margin-bottom: 10px;
+}
+
+.rightBarInfoKey{
+    font-weight: 500;
+    margin-right: 15px;
+    color: #555;
+}
+
+.rightBarInfoValue{
+    font-weight: 300;
+}
+
+
+/* .rightBarFriendList{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.rightBarFriend{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px
+}
+
+.rightBarProfileImgContainer{
+    margin-right: 10px;
+    position: relative;
+}
+
+.rightBarProfileImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.rightBarOnline{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: limegreen;
+    position: absolute;
+    top: -2px;
+    right: 0;
+    border: 2px solid white;
+}
+
+.rightbarUsername{
+    font-weight: 500;
+} */
+

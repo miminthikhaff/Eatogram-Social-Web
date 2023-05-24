@@ -1,0 +1,20 @@
+.register__select_category {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 0.7rem;
+  margin: 1rem 0rem;
+  font-size: 0.9em;
+  max-height: 15rem;
+  overflow: auto;
+}
+
+.register__select_category__option {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: var(--gray_0);
+  border-radius: 1rem;
+  cursor: pointer;
+}

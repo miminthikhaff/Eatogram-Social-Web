@@ -1,0 +1,52 @@
+.login_container.register {
+  max-height: 43rem;
+  overflow: auto;
+}
+
+form.login_container__form.register {
+  max-height: 100%;
+  overflow: auto;
+}
+
+.login_container__form.register.register1>h1>.gradient {
+  background: linear-gradient(45deg, rgb(21, 67, 6), rgb(114, 147, 74));
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+.login_container__form.register>h1>.gradient {
+  background: linear-gradient(90deg, hsl(343, 93%, 55%), hsl(330, 93%, 55%));
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+form.login_container__form>.login_container__form__social_logins {
+  display: grid;
+  grid-template-columns: calc(50% - 0.5rem) calc(50% - 0.5rem);
+  gap: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form.login_container__form label#cpassword {
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+form.login_container__form .validity {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
+  font-size: 0.9em;
+  border-radius: 1rem;
+  font-weight: 600;
+}

@@ -1,0 +1,148 @@
+.statusbar_container {
+    height: 120px;
+    width: 615px;
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    border-radius: 10px;
+    margin-top: 25px;
+    box-shadow: 1px 3px 20px #3939394c;
+    display: flex;
+}
+
+.statusbar_container::-webkit-scrollbar {
+    display: none;
+}
+
+.statusbar_status {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    border: 3px solid #0ce370;
+}
+
+.status {
+    margin: 25px 18px;
+}
+
+.statusbar_text {
+    font-size: 12px;
+    max-width: 60px;
+    overflow-x: hidden;
+    text-align: center;
+    color: black;
+}
+
+.post_reactimage {
+    width: 25px;
+    margin: 5px;
+}
+
+.statusbar__upload {
+    margin: 25px 10px 30px 30px;
+}
+
+.fileupload>input {
+    display: none;
+}
+
+.upload_button {
+    margin: 40px;
+    background-color: #f05d38;
+    color: white;
+    font-weight: 400;
+    padding: 10px 40px;
+    border: 0px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.upload_textbox {
+    position: absolute;
+    width: 70%;
+    height: 60px;
+    /* min-height: fit-content; */
+    text-align: center;
+    bottom: 50px;
+    opacity: 0.6;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    left: 60px;
+    right: 60px;
+    background-color: #0000008b;
+}
+
+.upload_preview {
+    padding: 0px;
+    margin-top: 50px;
+    height: 500px;
+    width: 600px;
+    background-size: cover;
+}
+
+.upload_story_header {
+    font-size: 15px;
+    color: white;
+    font-weight: 600;
+    text-align: left;
+    padding: 15px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    min-height: 60px;
+    background-color: rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.edit_textbox {
+    border-bottom: rgb(173, 172, 172);
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    position: absolute;
+    width: 80%;
+    min-height: fit-content;
+    text-align: center;
+    bottom: 120px;
+    font-weight: 500;
+    background-color: white;
+    color: black;
+    left: 60px;
+    right: 60px;
+}
+
+
+.edit_add_textbox {
+    border-bottom: rgb(173, 172, 172);
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    position: absolute;
+    width: 80%;
+    min-height: fit-content;
+    text-align: center;
+    bottom: 130px;
+    font-weight: 500;
+    background-color: white;
+    color: black;
+    left: 60px;
+    right: 60px;
+}
+
+.story_add_header {
+    font-size: 15px;
+    color: white;
+    font-weight: 600;
+    text-align: left;
+    padding: 15px;
+    position: absolute;
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+    min-height: 30px;
+    background-color: rgb(0, 0, 0);
+}

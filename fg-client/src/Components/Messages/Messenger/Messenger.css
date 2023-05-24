@@ -1,0 +1,110 @@
+.messenger{
+    height: calc(100vh - 60px);
+    display: flex;
+}
+
+.chatMenu{
+    flex: 2.5;
+    overflow-y: scroll;
+    background-color:rgb(202, 193, 180);
+    position: relative;
+}
+
+.chatMenuInput{
+    width: 90%;
+    padding: 10px 0px;
+    border: none;
+    border-bottom: 1px solid gray;
+    background-color: transparent;
+}
+
+.chatMenuInput:focus{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: none;
+}
+
+.chatBox{
+    flex: 7.5;
+}
+
+.chatBoxWrapper{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.chatBoxTop{
+    height: 100%;
+    overflow-y: scroll;
+    padding-right: 10px;
+}
+
+.chatBoxBottom{
+    margin-top: 5px;
+    display: inline-block;
+    position: relative;
+}
+
+.chatBoxBottom textarea{
+    border-radius: 20px;
+    width: 100%;
+    display: block;
+}
+
+.chatBoxBottom button{
+    position:absolute;
+    bottom:25px;
+    right:10px;
+}
+
+.chatMessageInput{
+    width: 85%;
+    height: 90px;
+    padding: 10px;
+}
+
+.chatSubmitButton{
+    width:fit-content;
+    height: fit-content;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: teal;
+    color: white;
+    padding: 15px;
+}
+
+.disabled-button{
+    width:fit-content;
+    height: fit-content;
+    border: none;
+    border-radius: 30px;
+    background-color: teal;
+    color: white;
+    padding: 15px;
+    cursor: not-allowed;
+}
+
+.chatOnline{
+    flex: 0;
+    overflow-y: scroll;
+}
+
+.chatMenuWrapper,.chatBoxWrapper,.chatOnlineWrapper {
+    padding: 20px;
+    background-image: url('https://i.pinimg.com/originals/fc/66/89/fc668920c4025d4b3aa5c4113c7d7802.jpg');
+}
+
+.chatMenu button{
+    font-size:40px;
+    color:white;
+    padding: 10px;
+    margin-right: 340px;
+}
+
+.edit-disabled-button{
+    cursor: not-allowed;
+}

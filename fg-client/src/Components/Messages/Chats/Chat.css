@@ -1,0 +1,46 @@
+.chat{
+   display: flex;
+   flex-direction: column; 
+   margin-top: 20px;
+}
+
+.chatTop{
+    display: flex;
+}
+
+.chatImg{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.chatText{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(145, 72, 72);
+    color: white;
+    max-width: 300px;
+}
+
+.chatBottom{
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: left;
+}
+
+.chat.own{
+    align-items: flex-end;
+}
+
+.chat.own .chatText{
+    background-color: gray;
+    color: black;
+}
+
+.chat.own .chatBottom{
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: right;
+}
